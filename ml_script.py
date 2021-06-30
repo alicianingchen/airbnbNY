@@ -23,7 +23,7 @@ print(args)
 
 
 # Data loading and examining null value
-dataset_raw = pd.read_csv('./dataset/AB_NYC_2019.csv')
+dataset_raw = pd.read_csv('AB_NYC_2019.csv')
 
 
 print("dataset_raw.shape: ", dataset_raw.shape)
@@ -78,7 +78,7 @@ def Linear_regression(x_train,y_train,x_test, y_test):
 
 
 
-###Find most relevant /ilrelevant features 
+# Find most relevant /ilrelevant features 
 def Coeff_dataframe(x_train,model, grid):
     Coeff = pd.DataFrame(columns=["Variable","Coefficient"])
     Coeff["Variable"]=x_train.columns
