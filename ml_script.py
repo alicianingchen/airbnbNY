@@ -15,7 +15,7 @@ from argparse import ArgumentParser
 
 
 parser = ArgumentParser()
-parser.add_argument("--model",type=str,choices=["LR","RF"],dest="model_name" )
+parser.add_argument("--model",type=str,choices=["LR","RF"],help="Linear regression model and Random Forest Regressor model", dest="model_name")
 parser.add_argument("--cv",type=int, help="random search cross validation folds",dest="cv")
 parser.add_argument("-i","--iteration", type=int, help="random search each fold iteration", dest="n_iter")
 args = parser.parse_args()
